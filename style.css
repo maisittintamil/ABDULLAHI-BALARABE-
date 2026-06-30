@@ -1,11 +1,11 @@
-/* Reset some default spacing */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -16,38 +16,48 @@ body {
 header {
     background-color: #003366;
     color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #003366;
+    padding: 15px;
+    text-align: center;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    color: yellow;
+}
+
+/* Welcome Section */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     text-align: center;
 }
 
-/* Navigation menu */
-nav {
-    margin-top: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: yellow;
-}
-
-/* Main content */
-main {
-    padding: 40px;
-    text-align: center;
-}
-
-main h2 {
+#welcome-section h1 {
     color: #003366;
     margin-bottom: 20px;
 }
 
-main p {
+#welcome-section p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -60,12 +70,43 @@ button {
     border: none;
     padding: 12px 25px;
     font-size: 16px;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #0055aa;
+}
+
+/* Projects */
+#projects {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.project-tile {
+    border: 2px solid #003366;
+    padding: 20px;
+    margin: 20px auto;
+    width: 250px;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#profile-link {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -74,5 +115,16 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 40px;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    #navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project-tile {
+        width: 90%;
+    }
 }
