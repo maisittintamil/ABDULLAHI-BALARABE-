@@ -1,64 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullahi Balarabe | Home</title>
-
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullahi Balarabe | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- Navigation Menu -->
-    <header>
-        <h1>Abdullahi Balarabe</h1>
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <img src="images/profile.jpg" alt="Abdullahi Balarabe" class="nav-avatar" />
+      <span class="brand-name">Abdullahi Balarabe</span>
+    </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="education.html">Education</a>
-            <a href="services.html">Services</a>
-            <a href="projects.html">Projects</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
-    </header>
+    <button id="menu-toggle" class="menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+      <span>Menu</span>
+      <span class="hamburger-icon">☰</span>
+    </button>
 
-    <!-- Home Section -->
-    <main>
-        <h2>Welcome to My Portfolio</h2>
-        <img src="images/profile.jpg" alt="My Profile Picture" class="profile">
+    <!-- Dropdown Navigation Drawer -->
+    <nav id="nav-drawer" class="nav-drawer">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <main id="home" class="hero">
+    <div class="hero-content">
+      <div class="profile-ring">
+        <img src="images/profile.jpg" alt="Abdullahi Balarabe" class="hero-photo" />
+      </div>
+
+      <p class="hero-kicker">HELLO, I'M</p>
+      <h1 class="hero-title">Abdullahi <span class="accent-text">Balarabe</span></h1>
+      
+      <div class="typing-wrapper">
+        <span id="typed-role" class="typed-text">Frontend Developer</span><span class="cursor">|</span>
+      </div>
+
+      <p class="hero-bio">
+        Hello! My name is <strong>Abdullahi Balarabe</strong>. I am a Mathematics student and Frontend Developer passionate about solving problems and building clean, responsive web applications. Currently collaborating on real-world software engineering projects at <strong>BuildLab</strong>.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#about" class="btn btn-secondary">About Me</a>
+      </div>
+
+      <div class="social-strip">
+        <span class="social-label">GET IN TOUCH</span>
+        <div class="social-icons">
+          <a href="https://github.com/maisittintamil" target="_blank" rel="noopener" class="icon-box" title="GitHub">GH</a>
+          <a href="tel:09131602103" class="icon-box" title="Call Me">📞</a>
+          <a href="#contact" class="icon-box" title="Message">✉️</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent-text">Me</span></h2>
+      <div class="card">
         <p>
-            Hello! My name is <strong>Abdullahi Balarabe</strong>.
-            I am a student learning HTML and CSS. This website was
-            created as my IFT203 assignment to showcase my skills,
-            education, projects, and services.
+          I combine analytical thinking from my studies with practical frontend web development to build intuitive, reliable user interfaces. As a member of the <strong>BuildLab</strong> engineering community, I work with Git, GitHub branching workflows, and collaborative code reviews to turn UI/UX designs into functional web applications.
         </p>
+      </div>
+    </div>
+  </section>
 
-        <button>Learn More</button>
-        <h3>My Funny Video</h3>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="accent-text">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3 & Responsive Design</div>
+        <div class="skill-card">JavaScript (ES6+)</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">DOM Manipulation</div>
+        <div class="skill-card">Problem Solving</div>
+      </div>
+    </div>
+  </section>
 
-<video width="320" controls>
-    <source src="videos/VID-20260715-WA0588.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>funny video😅
-<h3>My Audio</h3>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="accent-text">Projects</span></h2>
+      <div class="projects-grid">
+        
+        <article class="project-card">
+          <h3>Student Task Manager</h3>
+          <p>
+            A responsive web application built from scratch to help students create, search, filter, and track daily academic tasks with live status counters and LocalStorage persistence.
+          </p>
+          <div class="tech-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/maisittintamil/buildlab-entry-task" target="_blank" rel="noopener" class="btn btn-sm">GitHub Repo</a>
+          </div>
+        </article>
 
-<audio controls>
-    <source src="audio/Sahara.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-    </main>
+        <article class="project-card">
+          <h3>BuildLab Community Website</h3>
+          <p>
+            Collaborating with a team of frontend developers to build and deploy the official BuildLab community platform using structured Git branches and Pull Request reviews.
+          </p>
+          <div class="tech-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Team Git Workflow</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/buildlab-community" target="_blank" rel="noopener" class="btn btn-sm">Organization</a>
+          </div>
+        </article>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Abdullahi Balarabe. All Rights Reserved.</p>
-    </footer>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact <span class="accent-text">Me</span></h2>
+      <div class="card contact-card">
+        <p>Interested in collaborating or discussing frontend projects? Reach out directly:</p>
+        <div class="contact-details">
+          <p><strong>Phone / WhatsApp:</strong> 09131602103</p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/maisittintamil" target="_blank" rel="noopener">github.com/maisittintamil</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Abdullahi Balarabe. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
